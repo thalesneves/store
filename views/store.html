@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <!-- Configurações básicas da página -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Importar a fonte Remixicon para ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- Importar folha de estilos personalizada -->
+  <link rel="stylesheet" href="../public/styles.css" />
+
+  <!-- Título da página -->
+  <title>VANILLA</title>
+  <!-- Barra de cabeçalho -->
+</head>
+
+<body>
+  <nav class="nav">
+    <!-- Navegação -->
+    <nav class="section__container nav__container">
+
+      <!-- Logo -->
+      <a href="#" class="nav__logo">VANILLA </a>
+
+      <!-- Links de navegação -->
+      <ul class="nav__links">
+        <li class="link"><a href="store">HOME</a></li>
+        <li class="link"><a href="todes">TODOS OS PRODUTOS</a></li>
+        <li class="link"><a href="verones">VERÃO</a></li>
+        <li class="link"><a href="invernos">INVERNO</a></li>
+      </ul>
+
+      <!-- Ícones de navegação -->
+      <div class="nav__icons">
+        <span><i class="ri-user-line"></i></span>
+        <span><i class="ri-shopping-cart-line"></i></span>
+      </div>
+    </nav>
+  </nav>
+
+  <!-- Carrossel de imagens -->
+  <div class="main-carousel">
+    <div class="carousel-cell"><img src="../public/imgs/verao.png"></div>
+    <div class="carousel-cell"><img src="../public/imgs/agasalho.png"></div>
+    <div class="carousel-cell"><img src="../public/imgs/inverno.png"></div>
+  </div>
+</body>
+
+</html>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function () {
+    // Selecionar o elemento HTML do carrossel
+    var carousel = document.querySelector('.main-carousel');
+
+    // Inicializar o carrossel Flickity
+    var flkty = new Flickity(carousel, {
+      // Alinhar células à esquerda
+      cellAlign: 'left',
+
+      // Habilitar o modo wrap-around
+      wrapAround: true,
+
+      // Ativar a reprodução automática com um intervalo de 2 segundos
+      autoPlay: 3000,
+
+      // Pausar a reprodução automática quando o mouse passar por cima
+      pauseAutoPlayOnHover: true,
+
+      // Ocultar os botões de próxima e anterior
+      prevNextButtons: false,
+
+      // Impedir a rolagem do carrossel com o mouse
+      draggable: false
+    });
+  });
+</script>
+
+<section class="section__container sale__container">
+  <h2 class="section__title">A VENDA</h2>
+  <div class="sale__grid">
+    <div class="sale__card">
+      <img src="../public/imgs/sale-1.png" alt="sale" />
+      <div class="sale__content">
+        <h4 class="sale__title">TRICOT'S</h4>
+        <button class="btn sale__btn">COMPRE AGORA</button>
+      </div>
+    </div>
+    <div class="sale__card">
+      <img src="../public/imgs/sale-2.png" alt="sale" />
+      <div class="sale__content">
+        <h4 class="sale__title">JEANS</h4>
+        <button class="btn sale__btn">COMPRE AGORA</button>
+      </div>
+    </div>
+    <div class="sale__card">
+      <img src="../public/imgs/sale-3.png" alt="sale" />
+      <div class="sale__content">
+        <h4 class="sale__title">CROPPED</h4>
+        <button class="btn sale__btn">COMPRE AGORA</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var buyButtons = document.querySelectorAll('.buy-button');
+
+    buyButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+
+        alert('Produto adicionado ao carrinho!');
+      });
+    });
+  });
+</script>
+
+<!-- Seção de produtos must-have -->
+<section class="section__container musthave__container">
+  <h2 class="section__title">PRODUTOS</h2>
+
+  <!-- Navegação para filtrar produtos -->
+  <div class="musthave__nav">
+    <a href="#">VERÃO</a>
+    <a href="#">TODOS</a>
+    <a href="#">INVERNO</a>
+  </div>
+
+  <div class="musthave__grid">
+    <div class="musthave__card">
+      <img src="../public/imgs/INVERNO/MOLETOM-1.png" alt="must have" />
+      <h4>MOLETOM</h4>
+      <h4>Moletom Liso Preto</h4>
+      <p class="price"> R$45.00</p>
+      <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+    <div class="musthave__card">
+      <img src="../public/imgs/INVERNO/CALCA-M-2.png" alt="must have" />
+      <h4>CALÇA MOLETOM</h4>
+      <h4>Calça Com Punho Branca</h4>
+      <p class="price"> R$45.00</p>
+      <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+    <div class="musthave__card">
+      <img src="../public/imgs/INVERNO/TRICOT-4.png" alt="must have" />
+      <h4>TRICOT</h4>
+      <h4>Tricot Decote V Cinza Escuro</h4>
+      <p class="price"> R$45.00</p>
+      <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+    <div class="musthave__card">
+      <img src="../public/imgs/INVERNO/CALCA-4.png" alt="must have" />
+      <h4>CALÇA JEANS</h4>
+      <h4>Calça Mom Clara</h4>
+      <p class="price"> R$45.00</p>
+      <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+    <div class="musthave__card">
+      <img src="../public/imgs/VERAO/SHORT-M-3.png" alt="must have" />
+      <h4>SHORT MOLETOM</h4>
+      <h4>Short Moletom Verde Claro</h4>
+      <p class="price"> R$45.00</p>
+      <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+    <div class="musthave__card">
+      <img src="../public/imgs/VERAO/CAMISETA-2.png" alt="must have" />
+      <h4>CAMISETA</h4>
+      <h4>Camiseta Mostarda</h4>
+      <p class="price"> R$45.00</p>
+      <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+    <div class="musthave__card">
+      <img src="../public/imgs/VERAO/CROPPED-1.png" alt="must have" />
+      <h4>CROPPED</h4>
+      <h4>Cropped Corset Regata Preto</h4>
+      <p class="price"> R$45.00</p>
+      <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+    <div class="musthave__card">
+      <img src="../public/imgs/VERAO/SHORT-1.png" alt="must have" />
+      <h4>SHORT JEANS</h4>
+      <h4>Short Jeans Misto</h4>
+      <p class="price"> R$45.00</p>
+      <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+  </div>
+</section>
+
+</body>
+
+</html>

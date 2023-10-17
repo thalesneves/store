@@ -1,0 +1,191 @@
+.site-title {
+    text-align: left;
+    /* Centraliza o texto horizontalmente */
+    font-size: 70px;
+    /* Tamanho da fonte */
+    margin-top: 15px;
+    /* Espaçamento superior para separar o título do topo */
+    color: #000000;
+    /* Cor do texto */
+    /* Outros estilos de acordo com sua preferência */
+}
+
+.back-button {
+    position: fixed;
+    top: 10px;
+    /* Ajuste a posição vertical conforme necessário */
+    left: 20px;
+    /* Ajuste a posição horizontal conforme necessário */
+    background-color: #1a1a1a;
+    /* Cor de fundo do botão */
+    color: #fff;
+    /* Cor do texto do botão */
+    border: none;
+    border-radius: 50%;
+    /* Torna o botão circular */
+    width: 40px;
+    /* Largura do botão */
+    height: 40px;
+    /* Altura do botão */
+    font-size: 20px;
+    /* Tamanho da fonte do ícone */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para a tabela */
+.image-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    /* Centralizar a tabela horizontalmente */
+}
+
+.image-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    /* Centralizar conteúdo na célula */
+}
+
+.musthave__image {
+    /* Estilos para cada imagem */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Remover espaço extra abaixo da imagem */
+    margin: 0 auto;
+    /* Centralizar a imagem horizontalmente */
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.buy-button {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para a barra de navegação */
+.nav__container {
+    background-color: #ffff;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav__logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 500px;
+    color: #000000;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: #000000;
+}
+
+.link {
+    font-size: 18px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav__icons {
+    display: flex;
+    gap: 20px;
+}
+
+.nav__icons span {
+    font-size: 24px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.image-table {
+    width: 98%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    /* Centralizar a tabela horizontalmente */
+}
+
+.image-table td {
+    padding: 15px;
+    border: 2px solid #000000;
+}
+
+.musthave__image {
+    /* Estilos para cada imagem */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* Remover espaço extra abaixo da imagem */
+    margin: 0 auto;
+    /* Centralizar a imagem horizontalmente */
+}
+
+.musthave__grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.musthave__card {
+    /* Estilos para cada cartão */
+    flex: 0 0 calc(33.33% - 20px);
+    /* Largura de 33.33% com espaçamento entre os cartões */
+    text-align: center;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* Espaçamento entre os cartões */
+}
+
+.musthave__card img {
+    max-width: 100%;
+    /* Garante que as imagens não ultrapassem a largura do cartão */
+    border: 3px solid #000;
+    /* Adiciona uma borda de 2px sólida com a cor cinza (#ddd) */
+    border-radius: 10px;
+    /* Define um raio de 10px para tornar os cantos da imagem redondos */
+}
+
+.buy-button {
+    background-color: #1a1a1a;
+    /* Cor de fundo do botão */
+    color: #fff;
+    /* Cor do texto do botão */
+    border: none;
+    /* Remove a borda */
+    padding: 10px 20px;
+    /* Espaçamento interno do botão */
+    font-size: 16px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Cursor de apontar ao passar o mouse */
+    transition: background-color 0.3s ease;
+    /* Efeito de transição suave na mudança de cor de fundo */
+    border-radius: 4px;
+    /* Borda arredondada */
+}
+
+.buy-button:hover {
+    background-color: #525252;
+    /* Cor de fundo do botão ao passar o mouse */
+}
